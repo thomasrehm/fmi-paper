@@ -4,7 +4,9 @@
 % --------------------------------------------------------------------------
 \documentclass{article}
 \usepackage{fmiconf,amsmath,epsfig,graphics}
+\usepackage[overload]{textcase}
 \usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
 
 % Place images in the folder images
 \graphicspath{{images/}}
@@ -43,6 +45,23 @@ mobiles Endgerät, Gestensteuerung, Präsentation
 \label{sec:intro}
 Durch die steigende Nutzung und Verbreitung von mobilen Endgeräten sowie vernetzten Ausgabe-Geräten (Beamer/SmartTV) 
 ist eine Präsentations-Lösung im professionellen Umfeld in den letzten Jahren möglich geworden. Das Tablet oder Smartphone als Grundlage der Präsentation ist möglich, insofern  
+
+\section{App-Konzept}
+Nachfolgend sind die Kern-Funktionen gelistet, durch die sich die Proof-of-Concept-App von ähnlichen Lösungen abgrenzen soll:
+
+\begin{itemize}
+\item \textbf{Freihand-Foliensteuerung:} Erkennung von Hand-Gesten um eine innovative Freihand-Bedienung während der Präsentation zu gewährleisten
+\item \textbf{User Interface:} Button zum ein-/ausschalten der Gesten-Erkennung
+\item \textbf{Bestehendes Präsentation-Ökosystem:} Nutzen einer bestehenden Web-App/Ökosystems für Präsentationen um Decks im Browser zu editieren/verwalten
+\item \textbf{Native App:} Implementierung  einer nativen App zu besseren Bedienbarkeit und Einbinden nativer Features (Vollbild, Kamera-Support)
+\item \textbf{Universelle Portierbarkeit:} Einsatz von Web-Technologien für erleichterte Portierbarkeit (Android/iOS)
+\end{itemize}
+
+\section{Implementierung}
+\label{sec:implementierung}
+Für die Realisierung der Konzept-App werden bestehende Techniken kombiniert um eine innovatives Bedienkonzept zu erreichen. Die bestehenden Technologien sind einzeln ve
+
+
 
 % Am ende raus:
  \cite{C2}
