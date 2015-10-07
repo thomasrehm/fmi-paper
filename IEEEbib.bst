@@ -26,6 +26,8 @@ ENTRY
     type
     volume
     year
+    url
+    urldate
   }
   {}
   { label }

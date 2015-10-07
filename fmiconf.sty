@@ -117,6 +117,11 @@
 % will make all fonts (text and math) scalable, comment out the
 % following three lines. Those fonts use the same metrics as the Knuth
 % Computer Modern fonts and therefore no font redefinition is needed.
+%\usepackage[overload]{textcase}
+\usepackage{iflang}
+\usepackage[utf8]{inputenc}
+%\usepackage[overload]{textcase}
+
 \renewcommand{\sfdefault}{phv}
 \renewcommand{\rmdefault}{ptm}
 \renewcommand{\ttdefault}{pcr}
@@ -203,13 +208,13 @@
      \@xsect{\@tempskipa}}
 
 \def\abstract{\begin{center}
-{\bf \MakeTextUppercase{\abstractname}\vspace{-.5em}\vspace{0pt}}
+{\bf \MakeUppercase{\abstractname}\vspace{-.5em}\vspace{0pt}}
 \end{center}}
 \def\endabstract{\par}
 
 % Keyword section, added by Lance Cotton, adapted from IEEEtrans, corrected by Ulf-Dietrich Braumann
 \def\keywords{\vspace{.5em}
-{\bfseries\textit{Index Terms}---\,\relax%
+{\bfseries\textit{\IfLanguageName{ngerman}{Schlagwörter}{Index Terms}}---\,\relax%
 }}
 \def\endkeywords{\par} 
 
@@ -228,7 +233,7 @@
 \if@preprint\ps@preprint
 \else\ps@empty\flushbottom\fi
 
-\def\thebibliography#1{\section{\MakeTextUppercase{\refname}}\list
+\def\thebibliography#1{\section{\MakeUppercase{\refname}}\list
  {[\arabic{enumi}]}{\settowidth\labelwidth{[#1]}\leftmargin\labelwidth
  \advance\leftmargin\labelsep
  \usecounter{enumi}}
